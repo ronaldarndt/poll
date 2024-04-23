@@ -1,0 +1,27 @@
+{
+  "name": "api",
+  "version": "1.0.50",
+  "main": "src/index.ts",
+  "exports": "./src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bun run --watch src/index.ts",
+    "generate-migration": "drizzle-kit generate:pg",
+    "migrate": "bun run src/lib/db/migrate.ts"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "^1.0.2",
+    "@elysiajs/swagger": "^1.0.4",
+    "@neondatabase/serverless": "^0.9.1",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.30.9",
+    "elysia": "latest",
+    "elysia-ip": "^1.0.3",
+    "logestic": "^1.1.1"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "drizzle-kit": "^0.20.17"
+  },
+  "module": "src/index.js"
+}
