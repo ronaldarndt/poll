@@ -1,0 +1,10 @@
+{
+  "name": "poll",
+  "private": true,
+  "scripts": {
+    "dev": "bun --filter './packages/api-runner' --filter './packages/frontend' dev"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
